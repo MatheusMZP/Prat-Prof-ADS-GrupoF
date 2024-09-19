@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cinza claro para o fundo da página */
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Azul para o cabeçalho */
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 40px); /* Ajusta a altura para considerar o cabeçalho fixo */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #007BFF; /* Azul para o painel lateral */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 410px; /* Espaço para o painel lateral */
+    padding: 20px;
+    background: #f0f0f0; /* Fundo claro para a área de conteúdo */
+    min-height: calc(100vh - 40px); /* Ajusta a altura mínima para preencher a tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-box {
+    background-color: #ffffff; /* Fundo branco para o quadro de aviso */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 8px solid #b3e5fc; /* Faixa azul clara ao redor */
+    max-width: 900px; /* Largura máxima ajustada para mais largura */
+    width: 80%; /* Ajusta a largura para ser mais larga */
+    margin: 20px; /* Ajusta a margem para centralizar o quadro */
+    text-align: left; /* Alinha o texto à esquerda */
+    position: relative;
+    top: -90px; /* Move o quadro para cima */
+    right: 0; /* Mantém o quadro alinhado à direita */
+    transform: translateX(20%); /* Move o quadro mais para a direita */
+}
+
+.welcome-box h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.welcome-box p {
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    margin-bottom: 15px; /* Espaço entre parágrafos */
+}
